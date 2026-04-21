@@ -1,0 +1,72 @@
+/* 🌌 Background */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2b0033, #5a1a6e, #a66fa3);
+  min-height: 100vh;
+}
+
+/* Center container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Glass card */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 600px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* File input */
+input[type="file"] {
+  margin: 15px 0;
+  color: white;
+}
+
+/* Button */
+button {
+  background: linear-gradient(90deg, #d16ba5, #c777b9);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Result box */
+.result {
+  margin-top: 20px;
+}
+
+/* Score */
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Sections */
+.section {
+  margin-top: 15px;
+}
