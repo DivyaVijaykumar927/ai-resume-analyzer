@@ -18,7 +18,7 @@ app.use(express.json());
 const upload = multer({ dest: "uploads/" });
 
 // ✅ Use API key from .env
-const groq = new Groq({ apiKey: "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", });
+const groq = new Groq({ apiKey: "", });
 
 app.post("/analyze", upload.single("resume"), async (req, res) => {
   try {
