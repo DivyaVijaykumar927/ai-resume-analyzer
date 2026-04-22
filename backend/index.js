@@ -1,4 +1,8 @@
-require("dotenv").config();
+
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+console.log("API KEY LOADED:", process.env.GROQ_API_KEY ? "YES" : "NO");
 
 const express = require("express");
 const cors = require("cors");
