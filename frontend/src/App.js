@@ -29,7 +29,12 @@ function App() {
     try {
       const res = await axios.post(
         "https://ai-resume-analyzer-mjgh.onrender.com/analyze",
-        formData
+  formData,
+  {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  }
       );
 
       // ✅ SAFE JSON PARSING (FINAL FIX)
